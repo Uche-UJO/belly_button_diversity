@@ -134,7 +134,7 @@ def wfreq(sample):
 @app.route('/samples/<sample>')
 def samples(sample):
             
-    df_data = pd.read_csv("DataSets/belly_button_biodiversity_samples.csv")
+    df_data = pd.read_csv("datasets/otu_samples_data.csv")
     sampleId_result=Samples.__table__.columns.keys()
     sampleId=sampleId_result.pop(0)
     
